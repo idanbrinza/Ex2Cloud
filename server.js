@@ -1,16 +1,16 @@
 var express = require('express');
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 var app = express();
 
 app.get('/', function(req, res) {
   res.send({
-    "Output" : "Hello World!"
+    "Output" : "Hello Get World!"
   });
 });
 
 app.post('/', function(req, res) {
   res.send({
-    "Output" : "Hello World!"
+    "Output" : "Hello Post World!"
   });
 });
 
